@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Js Form</title>
+</head>
+<body>
+    <div class="signUpDiv">
+        <form action="/"  class="form" id="form">
+            <div class="mainDiv">
+                <h3>Get Started</h3>
+                <div class="inputDiv">
+                    <label>Name</label>
+                    <input type="text" placeholder="Name" class="input" id="nameInput">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <span class="error" id="errorSpan">error</span>
+                </div>
+                <div class="inputDiv">
+                    <label>Email</label>
+                    <input type="email" placeholder="email@example.com" class="input" id="emailInput">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <span class="error" id="errorSpan">error</span>
+                </div>
+                <div class="inputDiv">
+                    <label>Password</label>
+                    <input type="password" placeholder="Password" class="input" id="passwordInput">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <span class="error" id="errorSpan">error</span>
+                </div>
+                <div class="inputDiv">
+                    <label>Confirm Password</label>
+                    <input type="password" placeholder="Confirm Password" class="input" id="passwordCheckInput">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i> 
+                    <span class="error" id="errorSpan">error</span>
+                </div>
+                <div class="buttonDiv">
+                    <button class="redBtn" id="redBtn">Sign Up</button>
+                    <a href="success.html" class="transparentBtn" id="transparentBtn">Sign In</a>
+                </div>
+                <input type="checkbox" id="checkboxInput" class="checkbox" required>
+                <p class="text">I agree to the <span class="redSpan">Terms of the service <br></span> and <span class="redSpan">Privacy Policy</span></p>
+            </div>
+        </form>
+        <div class="img">
+            <img src="img/bermuda-profitable-growth.png" width="100%" alt="image">
+        </div>
+    </div>
+    <div class="popUp" id="popUp">
+        <div class="popUpimg">
+            <img src="img/bermuda-welcome-1.png" width="100%" alt="">
+        </div>
+        <h1>Success !</h1>
+        <a href="index.html" class="closeBtn">close</a>
+    </div>
+    
+    
+
+    <script src="main.js"></script>
+</body>
+</html>

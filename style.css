@@ -1,0 +1,241 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(244, 248, 255);
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+h3{
+    color: tomato;
+    font-size: 30px;
+    font-weight: bold;
+}
+/* Main div for all content */
+.signUpDiv{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    padding: 30px;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px rgb(240, 246, 255),0px 0px 10px rgb(220, 233, 252);
+}
+/* form inner content main div */
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+}
+.img{
+    width: 60%;
+}
+/* label input icon div for Each */
+.inputDiv{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+/* icon style */
+.inputDiv i{
+    position: absolute;
+    top: 55%;
+    right: 20px;
+    visibility: hidden;
+}
+.inputDiv span{
+    color: #e74c3c;
+    font-size: 13px;
+    visibility: hidden;
+}
+.inputDiv.error span{
+    visibility: visible;
+}
+/* icon success style */
+.inputDiv.success i.fa-check-circle{
+    color:#2ecc71;
+    visibility: visible;
+}
+.inputDiv.success input{
+    border: 2px solid #2ecc71;
+}
+/* icon error style */
+.inputDiv.error input{
+    border: 2px solid #e74c3c;
+}
+.inputDiv.error i.fa-exclamation-circle{
+    color:#e74c3c;
+    visibility: visible;
+}
+/* password warning text */
+.passwordWarning{
+    color: red;
+    font-size: 13px;
+    visibility: hidden;
+}
+.warning{
+    color: red;
+    font-size: 13px;
+    visibility: visible;
+}
+label{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(58, 58, 58);
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.input{
+    padding: 10px;
+    border: lightgray 1px solid;
+    background-color: rgb(236, 243, 253);
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 300px;
+    outline: none;
+    font-size: 15px;
+    opacity: 0.5;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.buttonDiv{
+    margin-top: 30px;
+}
+.redBtn{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background-color: tomato;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+.redBtn:hover{
+    background-color: rgb(228, 88, 63)
+}
+
+.transparentBtn{
+    width: 50px;
+    background-color: transparent;
+    border: none;
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: tomato;
+    cursor: pointer;
+    text-decoration: none;
+}
+.checkbox{
+    margin-top: 20px;
+    display: flex;
+    margin-bottom: 10px;
+    width: 20px;
+    height: 20px;
+}
+.redSpan{
+    color: tomato;
+}
+
+/* Pop up  */
+
+.popUp{
+    width: 0px;
+    height: 0px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(234, 255, 255, 0.8); 
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 15px 50px #c6fcdd;;
+    border-radius: 15px;
+    margin-top: 50px;
+    visibility: hidden;
+    position: absolute;
+    top: 0%;
+    left: 30%;
+    transition: 0.4s all ease-in-out;
+    opacity: 0;
+}
+.popUp.finish{
+    visibility: visible;
+    width: 500px;
+    height: 500px;
+    opacity: 1;
+}
+.popUp h1{
+    font-size: 50px;
+    font-weight: 600;
+    color: #2ecc71;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.popUp a{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    letter-spacing: 3px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.popUpBackground{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.popUpimg{
+    width: 60%;
+}
+.closeBtn{
+    width: 150px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #2ecc71;
+    padding: 20px;
+    border-radius: 5px;
+    transition: 0.2s linear;
+}
+.closeBtn:hover{
+    background-color: rgb(34, 185, 97);
+}
+
+/* responsive */
+@media (max-width:900px){
+    .img{
+        display: none;
+    }
+    .signUpDiv{
+        justify-content: center;
+        width: 90%;
+    }
+    .popUp{
+        left: 20%;
+    }
+}
+@media (max-width:450px){
+    .input{
+        width: 200px;
+    }
+    .buttonDiv{
+        display: flex;
+        flex-direction: column;
+    }
+    .transparentBtn{
+        margin: auto;
+        margin-top: 20px;
+    }
+    .popUp{
+        left: 0%;
+    }
+}
